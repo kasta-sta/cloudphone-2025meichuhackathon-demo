@@ -1,4 +1,5 @@
 import Keypad from './components/Keypad';
+import Menu from './components/Menu';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <p className="text-sm text-gray-500 leading-tight">
           It&apos;s a demo page.
         </p>
+        <Menu />
         <Keypad />
       </main>
     </div>

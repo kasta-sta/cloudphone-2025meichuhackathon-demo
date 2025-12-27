@@ -9,6 +9,7 @@ A demo website optimized for feature phones with ultra-low resolution displays, 
 - **Ultra-low resolution support**: Optimized for QVGA (240×320) and QQVGA (160×120) displays
 - **Feature phone navigation**: Keyboard mapping for 7 keys with visual feedback
 - **Directional keypad**: Visual arrow keypad that responds to arrow keys
+- **Interactive menu**: Navigate through phone menu items using arrow keys and Enter
 - **Visual feedback**: All navigation elements highlight when corresponding keys are pressed
 - **Responsive design**: Font sizes and layouts automatically adjust for different screen sizes
 - **Static export ready**: Pre-configured for GitHub Pages deployment
@@ -47,16 +48,18 @@ Static files will be generated in the `out/` directory.
 ### Directional Keypad (Center)
 | Key | Action | Visual Indicator |
 |-----|--------|------------------|
-| Arrow Up | Up navigation | Highlights ↑ button |
-| Arrow Down | Down navigation | Highlights ↓ button |
+| Arrow Up | Up navigation / Menu up | Highlights ↑ button |
+| Arrow Down | Down navigation / Menu down | Highlights ↓ button |
 | Arrow Left | Left navigation | Highlights ← button |
 | Arrow Right | Right navigation | Highlights → button |
+| Enter | Select menu item | Highlights center button |
 
 ## Project Structure
 
-- `app/page.tsx` - Main welcome page with keypad
+- `app/page.tsx` - Main welcome page with keypad and menu
 - `app/components/Navigation.tsx` - Fixed bottom navigation bar
 - `app/components/Keypad.tsx` - Visual directional keypad component
+- `app/components/Menu.tsx` - Interactive phone menu component
 - `app/components/KeyboardHandler.tsx` - Global keyboard event management
 - `app/components/NavigationContext.tsx` - State management for all button highlights
 - `app/components/ClientLayout.tsx` - Client-side layout wrapper
